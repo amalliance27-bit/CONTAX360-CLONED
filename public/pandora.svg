@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f2b48" />
+      <stop offset="60%" stop-color="#071322" />
+      <stop offset="100%" stop-color="#02070e" />
+    </radialGradient>
+
+    <!-- Rim Light Gradient -->
+    <linearGradient id="rimLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#006cff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Royal Blue Jacket Gradient -->
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="40%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#172554" />
+    </linearGradient>
+
+    <!-- Lapel Gradient -->
+    <linearGradient id="lapelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+
+    <!-- Skin Tone Gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d49b78" />
+      <stop offset="60%" stop-color="#c58661" />
+      <stop offset="100%" stop-color="#b1714d" />
+    </linearGradient>
+
+    <!-- Hair Gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#271d18" />
+      <stop offset="50%" stop-color="#150f0c" />
+      <stop offset="100%" stop-color="#080605" />
+    </linearGradient>
+
+    <!-- Headset Metallic Gradient -->
+    <linearGradient id="headsetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="url(#bgGrad)" />
+
+  <!-- Rim light aura -->
+  <circle cx="250" cy="200" r="180" fill="url(#rimLight)" />
+
+  <!-- Back Hair -->
+  <path d="M160,180 Q130,280 140,400 Q200,430 360,400 Q370,280 340,180 Z" fill="url(#hairGrad)" />
+
+  <!-- Shoulders & Torso Body Base -->
+  <path d="M100,500 L140,360 Q250,340 360,360 L400,500 Z" fill="#0f172a" />
+
+  <!-- White Inner Top / Camisole -->
+  <path d="M210,350 Q250,420 290,350 L310,500 L190,500 Z" fill="#f8fafc" />
+  <path d="M220,360 Q250,410 280,360 Z" fill="#e2e8f0" />
+
+  <!-- Royal Blue Jacket Left & Right -->
+  <path d="M80,500 L130,340 Q190,345 220,380 L180,500 Z" fill="url(#jacketGrad)" />
+  <path d="M420,500 L370,340 Q310,345 280,380 L320,500 Z" fill="url(#jacketGrad)" />
+
+  <!-- Royal Blue Lapels -->
+  <path d="M140,340 L215,440 L225,380 L180,340 Z" fill="url(#lapelGrad)" />
+  <path d="M360,340 L285,440 L275,380 L320,340 Z" fill="url(#lapelGrad)" />
+
+  <!-- Neck & Chest -->
+  <path d="M215,260 L215,360 Q250,380 285,360 L285,260 Z" fill="url(#skinGrad)" />
+  <path d="M215,260 Q250,290 285,260 Z" fill="#b1714d" opacity="0.4" />
+
+  <!-- Face -->
+  <path d="M175,180 Q175,305 250,305 Q325,305 325,180 Q325,100 250,100 Q175,100 175,180 Z" fill="url(#skinGrad)" />
+
+  <!-- Cheek Highlights & Soft Glow -->
+  <ellipse cx="205" cy="225" rx="20" ry="12" fill="#ea580c" opacity="0.15" />
+  <ellipse cx="295" cy="225" rx="20" ry="12" fill="#ea580c" opacity="0.15" />
+
+  <!-- Eyebrows -->
+  <path d="M190,170 Q215,160 235,172" stroke="#1c120c" stroke-width="4" stroke-linecap="round" fill="none" />
+  <path d="M310,170 Q285,160 265,172" stroke="#1c120c" stroke-width="4" stroke-linecap="round" fill="none" />
+
+  <!-- Eyes -->
+  <!-- Left Eye -->
+  <ellipse cx="215" cy="190" rx="14" ry="9" fill="#ffffff" />
+  <ellipse cx="215" cy="190" rx="7" ry="7" fill="#3b2219" />
+  <circle cx="215" cy="190" r="3.5" fill="#090503" />
+  <circle cx="217" cy="188" r="2" fill="#ffffff" />
+  <path d="M198,188 Q215,178 232,188" stroke="#0f0a06" stroke-width="2.5" fill="none" />
+
+  <!-- Right Eye -->
+  <ellipse cx="285" cy="190" rx="14" ry="9" fill="#ffffff" />
+  <ellipse cx="285" cy="190" rx="7" ry="7" fill="#3b2219" />
+  <circle cx="285" cy="190" r="3.5" fill="#090503" />
+  <circle cx="287" cy="188" r="2" fill="#ffffff" />
+  <path d="M268,188 Q285,178 302,188" stroke="#0f0a06" stroke-width="2.5" fill="none" />
+
+  <!-- Nose -->
+  <path d="M250,190 L246,230 Q250,235 254,230 Z" fill="#b1714d" opacity="0.5" />
+  <ellipse cx="250" cy="232" rx="7" ry="3" fill="#9a5a38" />
+
+  <!-- Lips with warm smile -->
+  <path d="M225,255 Q250,250 275,255 Q250,280 225,255 Z" fill="#b91c1c" opacity="0.85" />
+  <path d="M230,257 Q250,259 270,257 Q250,270 230,257 Z" fill="#ffffff" />
+  <path d="M225,255 Q250,260 275,255" stroke="#7f1d1d" stroke-width="2" fill="none" />
+
+  <!-- Front Hair (Wavy styled curls) -->
+  <path d="M170,170 Q160,80 250,75 Q340,80 330,170 Q350,230 340,300 Q320,310 310,250 Q310,150 250,130 Q190,140 180,240 Q170,290 155,270 Q150,220 170,170 Z" fill="url(#hairGrad)" />
+  <path d="M190,110 Q240,100 280,125 Q230,120 190,110 Z" fill="#453126" opacity="0.5" />
+
+  <!-- Call Center Headset -->
+  <!-- Headband -->
+  <path d="M175,150 Q170,75 250,65 Q325,75 325,145" stroke="url(#headsetGrad)" stroke-width="7" stroke-linecap="round" fill="none" />
+  
+  <!-- Right Ear Cushion & Mechanism -->
+  <rect x="316" y="140" width="16" height="34" rx="8" fill="#1e293b" />
+  <circle cx="324" cy="157" r="11" fill="#0f172a" stroke="#475569" stroke-width="2" />
+
+  <!-- Headset Boom Microphone Wire & Capsule -->
+  <path d="M324,162 Q330,215 300,245 Q285,255 270,252" stroke="#334155" stroke-width="4" stroke-linecap="round" fill="none" />
+  <ellipse cx="265" cy="252" rx="7" ry="5" fill="#0f172a" stroke="#64748b" stroke-width="1.5" />
+  <circle cx="265" cy="252" r="2.5" fill="#38bdf8" />
+</svg>
